@@ -25,7 +25,7 @@ void toGigabytes(unsigned long long B) {
         cout << "Сначала введите объем данных (пункт 1).\n";
         return;
     }
-    double GB = static_cast<double>(B) / (1024 * 1024 * 1024);
+    double GB = static_cast<double>(B) / (1024 * 1024 * 1024);//
     cout << B << " байт = " << GB << " гигабайт (GB)\n";
 }
 
