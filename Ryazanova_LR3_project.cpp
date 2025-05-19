@@ -3,6 +3,12 @@
 using namespace std;
 
 void inputBytes(unsigned long long& B) {
+     cout << "Введите количество байтов: ";
+    while (!(cin >> B)) {
+        cout << "Ошибка ввода! Пожалуйста, введите целое число: ";
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    }
 }
 
 void toMegabytes(unsigned long long B) {
