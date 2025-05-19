@@ -12,6 +12,12 @@ void inputBytes(unsigned long long& B) {
 }
 
 void toMegabytes(unsigned long long B) {
+    if (B == 0) {
+        cout << "Сначала введите объем данных (пункт 1).\n";
+        return;
+    }
+    double MB = static_cast<double>(B) / (1024 * 1024);
+    cout << B << " байт = " << MB << " мегабайт (MB)\n";
 }
 
 void toGigabytes(unsigned long long B) {
